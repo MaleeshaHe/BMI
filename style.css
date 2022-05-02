@@ -18,3 +18,23 @@ h1{
     margin: 0 5px 0 5px ;
     text-shadow: 4px -4px rgba(0,0,255,0.2);
 }
+
+#section1{
+    position: absolute;
+    width: 250px;
+    height: 600px;
+    margin-top: 50px;
+    border-right: 3px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+#section2{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 260px;
+    display: flex;
+    justify-content: center;
+}
