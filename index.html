@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Practical Revision 01</title>
@@ -29,18 +28,28 @@
       </table>
     </div>
     <div id="section2">
-      <form action="">
-        <div class="form-field">
-          <label>Enter your weight in kilo grammes</label>
-          <input type="number" class="weight" id="weight" /><br />
-          <label>Enter your height in meters</label>
-          <input type="number" class="height" id="height" /><br />
-        </div>
-        <div class="buttons">
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Reset" />
-        </div>
-      </form>
+      <div class="form">
+        <form action="" name="bmiform" method="post">
+          <div class="form-field">
+            <label>Enter your weight in kilo grammes</label>
+            <input type="number" class="weight" id="weight" /><br />
+            <label>Enter your height in meters</label>
+            <input type="number" class="height" id="height" /><br />
+          </div>
+          <div class="buttons">
+            <input type="button" value="Submit" onclick="findBMI();" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="output">
+        <h3>Your BMI value is</h3>
+        <h3 id="bmiValue"></h3>
+        <h3 id="state"></h3>
+      </div>
     </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>

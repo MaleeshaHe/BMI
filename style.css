@@ -30,10 +30,8 @@ h1{
 
 #section2{
     position: absolute;
-    width: 75%;
-    height: 100%;
+    width: 500px;
+    height: 600px;
     margin-top: 50px;
     margin-left: 260px;
-    display: flex;
-    justify-content: center;
 }
