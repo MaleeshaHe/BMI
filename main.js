@@ -7,12 +7,36 @@ function findBMI() {
 
   if (Bmi < 60 && Bmi > 29) {
     State = "Obese";
+    $(document).ready(function () {
+      $("#obese").fadeIn("slow");
+      $("#over").hide();
+      $("#normal").hide();
+    });
   } else if (Bmi <= 29 && Bmi > 24) {
     State = "Over weight";
+    $(document).ready(function () {
+      $("#over").fadeIn("slow");
+      $("#normal").hide();
+      $("#obese").hide();
+    });
   } else if (Bmi <= 24 && Bmi >= 19) {
     State = "Normal";
+    $(document).ready(function () {
+      $("#normal").fadeIn("slow");
+      $("#over").hide();
+      $("#obese").hide();
+    });
   }
+  $(document).ready(function () {
+    $(".output").fadeIn();
+  });
 
   document.getElementById("bmiValue").innerHTML = Bmi;
   document.getElementById("state").innerHTML = State;
 }
+
+$(document).ready(function () {
+  $("#reset").click(function () {
+    $(".output,img").fadeOut();
+  });
+});

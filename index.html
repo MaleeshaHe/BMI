@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./jquery-3.6.0.min.js"></script>
     <title>Practical Revision 01</title>
   </head>
   <body>
@@ -32,21 +33,26 @@
         <form action="" name="bmiform" method="post">
           <div class="form-field">
             <label>Enter your weight in kilo grammes</label>
-            <input type="number" class="weight" id="weight" /><br />
+            <input type="number" class="weight" id="weight" required /><br />
             <label>Enter your height in meters</label>
-            <input type="number" class="height" id="height" /><br />
+            <input type="number" class="height" id="height" required /><br />
           </div>
           <div class="buttons">
             <input type="button" value="Submit" onclick="findBMI();" />
-            <input type="reset" value="Reset" />
+            <input type="reset" value="Reset" id="reset" />
           </div>
         </form>
       </div>
       <br />
       <div class="output">
-        <h3>Your BMI value is</h3>
+        <h3 class="val">Your BMI value is</h3>
         <h3 id="bmiValue"></h3>
         <h3 id="state"></h3>
+      </div>
+      <div class="image">
+        <img src="./images/normal.jpg" alt="" id="normal" />
+        <img src="./images/obese.jpeg" alt="" id="obese" />
+        <img src="./images/over.jpeg" alt="" id="over" />
       </div>
     </div>
 
