@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 body{
@@ -22,8 +21,7 @@ h1{
 #section1{
     position: absolute;
     width: 300px;
-    height: 600px;
-    
+    height: 100%;
     margin-top: 50px;
     border-right: 3px solid #2f0973;
 

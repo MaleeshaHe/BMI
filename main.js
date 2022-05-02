@@ -31,12 +31,13 @@ function findBMI() {
     $(".output").fadeIn();
   });
 
-  document.getElementById("bmiValue").innerHTML = Bmi;
+  document.getElementById("bmiValue").innerHTML = Math.round(Bmi * 100) / 100;
   document.getElementById("state").innerHTML = State;
 }
 
 $(document).ready(function () {
   $("#reset").click(function () {
-    $(".output,img").fadeOut();
+    $(".output").fadeOut();
+    $("img").hide("slow");
   });
 });
