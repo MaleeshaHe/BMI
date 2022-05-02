@@ -9,37 +9,55 @@
   <body>
     <h1>Find Your Body Mass Index Value</h1>
     <div id="section1">
-      <table>
-        <tr>
-          <th>BMI Value</th>
-          <th>State</th>
-        </tr>
-        <tr>
-          <td>19&lt;=bmi&lt;=24</td>
-          <td>Normal</td>
-        </tr>
-        <tr>
-          <td>24&lt;bmi&lt;=29</td>
-          <td>Over weight</td>
-        </tr>
-        <tr>
-          <td>29&lt;bmi&lt;60</td>
-          <td>Obese</td>
-        </tr>
-      </table>
+      <center>
+        <table>
+          <caption>
+            BMI Chart
+          </caption>
+          <tr>
+            <th>BMI Value</th>
+            <th>State</th>
+          </tr>
+          <tr>
+            <td>19&lt;=bmi&lt;=24</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>24&lt;bmi&lt;=29</td>
+            <td>Over weight</td>
+          </tr>
+          <tr>
+            <td>29&lt;bmi&lt;60</td>
+            <td>Obese</td>
+          </tr>
+        </table>
+      </center>
     </div>
     <div id="section2">
       <div class="form">
         <form action="" name="bmiform" method="post">
-          <div class="form-field">
-            <label>Enter your weight in kilo grammes</label>
-            <input type="number" class="weight" id="weight" required /><br />
-            <label>Enter your height in meters</label>
-            <input type="number" class="height" id="height" required /><br />
-          </div>
-          <div class="buttons">
-            <input type="button" value="Submit" onclick="findBMI();" />
-            <input type="reset" value="Reset" id="reset" />
+          <table>
+            <tr>
+              <td>Enter your weight in kilo grammes</td>
+              <td>
+                <input type="text" class="weight" id="weight" required />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter your height in meters</td>
+              <td>
+                <input type="text" class="height" id="height" required />
+              </td>
+            </tr>
+          </table>
+          <div class="center">
+            <input
+              class="button"
+              type="button"
+              value="Submit"
+              onclick="findBMI();"
+            />
+            <input class="button" type="reset" value="Reset" id="reset" />
           </div>
         </form>
       </div>
@@ -49,7 +67,7 @@
         <h3 id="bmiValue"></h3>
         <h3 id="state"></h3>
       </div>
-      <div class="image">
+      <div class="center">
         <img src="./images/normal.jpg" alt="" id="normal" />
         <img src="./images/obese.jpeg" alt="" id="obese" />
         <img src="./images/over.jpeg" alt="" id="over" />
