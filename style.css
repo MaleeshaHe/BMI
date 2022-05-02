@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(./images/health.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: blue;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 5px 0 5px ;
+    text-shadow: 4px -4px rgba(0,0,255,0.2);
+}
