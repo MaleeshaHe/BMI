@@ -9,10 +9,38 @@
   <body>
     <h1>Find Your Body Mass Index Value</h1>
     <div id="section1">
-      <h3>Section1</h3>
+      <table>
+        <tr>
+          <th>BMI Value</th>
+          <th>State</th>
+        </tr>
+        <tr>
+          <td>19&lt;=bmi&lt;=24</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>24&lt;bmi&lt;=29</td>
+          <td>Over weight</td>
+        </tr>
+        <tr>
+          <td>29&lt;bmi&lt;60</td>
+          <td>Obese</td>
+        </tr>
+      </table>
     </div>
     <div id="section2">
-      <h3>Section2</h3>
+      <form action="">
+        <div class="form-field">
+          <label>Enter your weight in kilo grammes</label>
+          <input type="number" class="weight" id="weight" /><br />
+          <label>Enter your height in meters</label>
+          <input type="number" class="height" id="height" /><br />
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
     </div>
   </body>
 </html>
